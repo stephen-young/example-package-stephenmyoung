@@ -1,3 +1,3 @@
 [build-system]
-requires = ["seuptools>=42]
+requires = ["setuptools>=42"]
 build-backend = "setuptools.build_meta"
