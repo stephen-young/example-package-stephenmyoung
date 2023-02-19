@@ -32,7 +32,7 @@ Issues = "https://github.com/stephen-young/example-package-stephenmyoung/issues"
 Source = "https://github.com/stephen-young/example-package-stephenmyoung"
 
 [tool.hatch.version]
-path = "src/example_package/__about__.py"
+path = "src/example_package_stephenmyoung/__about__.py"
 
 [tool.hatch.envs.default]
 dependencies = [
@@ -41,7 +41,7 @@ dependencies = [
 ]
 [tool.hatch.envs.default.scripts]
 ver = "python --version"
-cov = "pytest --cov-report=term-missing --cov-config=pyproject.toml --cov=src/hatch_demo --cov=tests {args}"
+cov = "pytest --cov-report=term-missing --cov-config=pyproject.toml --cov=src/example_package_stephenmyoung --cov=tests {args}"
 no-cov = "cov --no-cov {args}"
 
 [[tool.hatch.envs.test.matrix]]
@@ -51,7 +51,7 @@ python = ["37", "38", "39", "310", "311"]
 branch = true
 parallel = true
 omit = [
-  "src/example_package/__about__.py",
+  "src/example_package_stephenmyoung/__about__.py",
 ]
 
 [tool.coverage.report]
